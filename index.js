@@ -56,6 +56,11 @@ document.querySelectorAll('p').forEach((p) => {
             return whichClass(p);
         }
     });
+    p.addEventListener("click", () => {
+        if(mouseIsHeldDown) {
+            return whichClass(p);
+        }
+    });
 })
 })
 
