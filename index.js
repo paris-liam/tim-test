@@ -8,6 +8,14 @@ document.addEventListener("mouseup", () => {
     return mouseIsHeldDown = false;
 });
 
+document.addEventListener("ontouchstart", () => {
+    return mouseIsHeldDown = true}
+);
+
+document.addEventListener("ontouchend", () => {
+    return mouseIsHeldDown = false;
+});
+
 const textContainer = document.querySelector("#text-container");
 
 const textArea = document.querySelector("#textarea");
@@ -61,6 +69,16 @@ document.querySelectorAll('p').forEach((p) => {
             return whichClass(p);
         }
     });
+    p.addEventListener("ontouchstart", () => {
+        if(mouseIsHeldDown) {
+            return whichClass(p);
+        }
+    });
+    p.addEventListener("ontouchmove", () => {
+        if(mouseIsHeldDown) {
+            return whichClass(p);
+        }
+    }); 
 })
 })
 
