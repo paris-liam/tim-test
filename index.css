@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+textarea {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    margin-bottom: 5vh;
+    
+}
+
+#text-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    margin: 0 auto;
+}
+
+p{
+    margin: 0;
+}
+
+.highlight1 {
+    color: black;
+    background-color: white;
+}
+
+.highlight2 {
+    color: white;
+    background-color: black;
+}
+
+.highlight3 { 
+    color: white;
+    background-color: white;
+}
